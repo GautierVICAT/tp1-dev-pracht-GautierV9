@@ -1,12 +1,12 @@
 ---
 import PlotFigure from '../components/PlotFigure.astro';
-import Layout from '../../Layouts/layouts.astro';
-import penguins from '../data/penguin.json';
+import Layout from '../../Layouts/Layouts.astro';
+import penguins from '../data/penguinS.json';
 import * as Plot from "@observablehq/plot";
 ---
 
 <Layout>
-	<h1>Scatterplot</h1>
+	<h1>Penguins</h1>
 	<PlotFigure
 		options={{
       		marks: [
@@ -14,4 +14,3 @@ import * as Plot from "@observablehq/plot";
       ]}}
 	/>
 </Layout>
-

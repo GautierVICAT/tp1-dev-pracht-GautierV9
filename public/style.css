@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  
+  /* Fond avec des nuances d'orange et pêche pour contraster avec le header */
+  background-image:
+    radial-gradient(circle at 15% 85%, rgba(255, 165, 77, 0.7) 0%, transparent 40%),  /* orange doux */
+    radial-gradient(circle at 75% 25%, rgba(255, 140, 101, 0.6) 0%, transparent 40%), /* corail / pêche */
+    radial-gradient(circle at 40% 60%, rgba(255, 200, 102, 0.5) 0%, transparent 40%), /* doré orangé */
+    linear-gradient(to bottom, #fff3e0 0%, #ffe0b2 100%); /* beige orangé clair */
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 2.5rem auto 2rem auto;
+  background: rgba(255, 255, 255, 0.95); /* main clair pour lisibilité */
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  padding: 2.5rem 2rem 2rem 2rem;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #ff6d00; /* orange vif pour le titre */
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(255, 165, 77, 0.55);
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  
+  /* Fond avec nuances d'orange et bande diagonale sombre */
+  background-image:
+    /* bulles orangées */
+    radial-gradient(circle at 15% 85%, rgba(255, 165, 77, 0.7) 0%, transparent 40%),
+    radial-gradient(circle at 75% 25%, rgba(255, 140, 101, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 40% 60%, rgba(255, 200, 102, 0.5) 0%, transparent 40%),
+    /* diagonale sombre */
+    linear-gradient(135deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 50%, transparent 50%, transparent 100%),
+    /* dégradé de fond orangé clair */
+    linear-gradient(to bottom, #fff3e0 0%, #ffe0b2 100%);
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
